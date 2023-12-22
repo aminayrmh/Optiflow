@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" stylesheets="@../css/stylesheets.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.finaloptiflow.SignUpController">
+   <children>
+      <GridPane alignment="CENTER" layoutX="1.0" layoutY="10.0" prefHeight="700.0" prefWidth="1100.0" stylesheets="@../css/stylesheets.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="177.00001220703126" minHeight="69.19999389648439" prefHeight="101.9999969482422" />
+            <RowConstraints maxHeight="524.4000061035157" minHeight="378.3999877929687" prefHeight="491.6000030517579" />
+            <RowConstraints maxHeight="156.0000122070312" minHeight="103.1999633789062" prefHeight="108.79999999999995" />
+         </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="92.0" prefWidth="630.0" GridPane.columnIndex="1">
+               <padding>
+                  <Insets bottom="50.0" top="15.0" />
+               </padding>
+               <children>
+                  <VBox alignment="CENTER" prefHeight="103.0" prefWidth="498.0">
+                     <children>
+                        <HBox alignment="CENTER" styleClass="text-montserrat-40" stylesheets="@../css/stylesheets.css">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="349.0" style="-fx-font-size: 30;" styleClass="text-montserrat-40" stylesheets="@../css/stylesheets.css" text="Registration" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <GridPane.margin>
+                  <Insets top="30.0" />
+               </GridPane.margin>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="388.0" prefWidth="630.0" spacing="10.0" stylesheets="@../css/stylesheets.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <VBox alignment="CENTER" spacing="20.0">
+                     <children>
+                        <VBox prefHeight="21.0" prefWidth="590.0">
+                           <children>
+                              <Label style="-fx-font-size: 12;" styleClass="text-montserrat-12" text="Username" />
+                              <TextField fx:id="usernameSignUp" minHeight="10.0" prefHeight="10.0" prefWidth="590.0" promptText="Username" styleClass="textfield-area" stylesheets="@../css/stylesheets.css" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="21.0" prefWidth="590.0">
+                           <children>
+                              <Label style="-fx-font-size: 12;" styleClass="text-montserrat-12" text="First name" />
+                              <TextField fx:id="firstNameSignUp" minHeight="10.0" prefHeight="10.0" prefWidth="590.0" promptText="First name" styleClass="textfield-area" stylesheets="@../css/stylesheets.css" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="21.0" prefWidth="590.0">
+                           <children>
+                              <Label style="-fx-font-size: 12;" styleClass="text-montserrat-12" text="Last name" />
+                              <TextField fx:id="lastNameSignUp" minHeight="10.0" prefHeight="10.0" prefWidth="590.0" promptText="Last name" styleClass="textfield-area" stylesheets="@../css/stylesheets.css" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="14.0" prefWidth="590.0">
+                           <children>
+                              <Label style="-fx-font-size: 12;" styleClass="text-montserrat-12" text="Email" />
+                              <TextField fx:id="emailSignUp" minHeight="10.0" prefHeight="10.0" prefWidth="590.0" promptText="Email" styleClass="textfield-area" stylesheets="@../css/stylesheets.css" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="39.0" prefWidth="590.0">
+                           <children>
+                              <Label style="-fx-font-size: 12;" styleClass="text-montserrat-12" text="Password" />
+                              <PasswordField fx:id="passwordSignUp" minHeight="35.0" prefHeight="35.0" prefWidth="590.0" promptText="Password" styleClass="textfield-area" stylesheets="@../css/stylesheets.css" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="0.0" prefWidth="590.0">
+                           <children>
+                              <Label style="-fx-font-size: 12;" styleClass="text-montserrat-12" text="Confirm password" />
+                              <PasswordField fx:id="confirmPasswordSignUp" minHeight="35.0" prefHeight="35.0" prefWidth="590.0" promptText="Confirm password" styleClass="textfield-area" stylesheets="@../css/stylesheets.css" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="590.0">
+                     <children>
+                        <Label fx:id="signUpMessageField" alignment="CENTER" prefHeight="54.0" prefWidth="590.0" style="-fx-text-fill: ff5e48; -fx-font-size: 12;" styleClass="text-montserrat-12" textFill="#ff3333">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="130.0" prefWidth="630.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="50.0" left="0.0" right="0.0" top="50.0" />
+               </padding>
+               <children>
+                  <VBox alignment="CENTER" prefHeight="71.0" prefWidth="318.0" spacing="5.0">
+                     <children>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="318.0" spacing="120.0">
+                           <children>
+                              <Button fx:id="createAccountButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0" styleClass="log-in-button" text="Create" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="21.0" prefWidth="318.0">
+                           <children>
+                              <Hyperlink fx:id="goBackButton" styleClass="text-montserrat-8-5" stylesheets="../css/stylesheets.css" text="Back" underline="true" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

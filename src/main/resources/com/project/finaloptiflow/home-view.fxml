@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane minHeight="-Infinity" prefHeight="700.0" prefWidth="1100.0" stylesheets="@../css/stylesheets.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.finaloptiflow.HomeController">
+   <children>
+      <GridPane prefHeight="700.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="50.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/left_border.png" />
+               </image>
+            </ImageView>
+            <SplitPane dividerPositions="0.3027" prefHeight="700.0" prefWidth="1100.0" GridPane.columnIndex="1">
+               <items>
+                <AnchorPane maxHeight="-Infinity" maxWidth="385.0" minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="100.0">
+                     <children>
+                        <StackPane prefHeight="700.0" prefWidth="336.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="700.0" fitWidth="1100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/background.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="split-pane-divider">
+                                 <children>
+                                    <ImageView fitHeight="116.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/logo.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label style="-fx-font-size: 24;" styleClass="text-montserrat-40" text="OPTIFLOW">
+                                       <VBox.margin>
+                                          <Insets bottom="70.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="335.0" styleClass="side-navigation-button" text="Home" />
+                                    <Line endX="163.7667236328125" startX="-100.0">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Line>
+                                    <Button fx:id="forCompanyButton" mnemonicParsing="false" prefHeight="43.0" prefWidth="335.0" styleClass="side-navigation-button" text="For Companies" />
+                                    <Button fx:id="addResume" mnemonicParsing="false" prefHeight="43.0" prefWidth="335.0" styleClass="side-navigation-button" text="Add Resume" />
+                                    <Line endX="163.7667236328125" startX="-100.0">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Line>
+                                    <Button fx:id="logOut" mnemonicParsing="false" prefHeight="43.0" prefWidth="335.0" styleClass="side-navigation-button" text="Log Out" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </StackPane>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.559270441532135" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="700.0" prefWidth="1100.0">
+                     <children>
+                        <VBox fillWidth="false" prefHeight="698.4" prefWidth="728.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <VBox alignment="CENTER_LEFT" prefHeight="165.0" prefWidth="366.0">
+                                 <children>
+                                    <Label style="-fx-font-size: 30;" styleClass="text-montserrat-40" text="Welcome to Optiflow," />
+                                    <Label fx:id="showUsername" style="-fx-font-size: 30;" styleClass="text-montserrat-40" />
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" prefHeight="200.0" prefWidth="663.0" spacing="30.0">
+                                 <children>
+                                    <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="162.0" prefWidth="273.0">
+                                       <children>
+                                          <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="254.0" snapToPixel="false" StackPane.alignment="CENTER">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="21.0" prefWidth="175.0" styleClass="text-button-bold-12" text="Backend Developer">
+                                                   <VBox.margin>
+                                                      <Insets bottom="15.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label prefHeight="15.0" prefWidth="208.0" styleClass="text-button-10" text="Developing and maintaining the" />
+                                                <Label prefHeight="15.0" prefWidth="165.0" styleClass="text-button-10" text=" server-side of applications" />
+                                                <Label prefHeight="15.0" prefWidth="128.0" styleClass="text-button-10" text="Press for show more" textAlignment="CENTER">
+                                                   <padding>
+                                                      <Insets top="15.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                             <StackPane.margin>
+                                                <Insets bottom="160.0" left="50.0" right="50.0" top="150.0" />
+                                             </StackPane.margin>
+                                          </VBox>
+                                          <Button fx:id="show1" alignment="CENTER" minWidth="164.0" mnemonicParsing="false" prefHeight="164.0" prefWidth="263.0" styleClass="onboarding-work-button" StackPane.alignment="CENTER">
+                                             <StackPane.margin>
+                                                <Insets />
+                                             </StackPane.margin>
+                                          </Button>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="162.0" prefWidth="273.0">
+                                       <children>
+                                          <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="254.0" snapToPixel="false" StackPane.alignment="CENTER">
+                                             <StackPane.margin>
+                                                <Insets bottom="160.0" left="50.0" right="50.0" top="150.0" />
+                                             </StackPane.margin>
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="21.0" prefWidth="175.0" styleClass="text-button-bold-12" text="Frontend Developer">
+                                                   <VBox.margin>
+                                                      <Insets bottom="15.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label prefHeight="15.0" prefWidth="166.0" styleClass="text-button-10" text="Designing web application " textAlignment="CENTER" />
+                                                <Label prefHeight="15.0" prefWidth="66.0" styleClass="text-button-10" text="interfaces" textAlignment="CENTER" />
+                                                <Label prefHeight="15.0" prefWidth="128.0" styleClass="text-button-10" text="Press for show more" textAlignment="CENTER">
+                                                   <padding>
+                                                      <Insets top="15.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <Button fx:id="show2" alignment="CENTER" minWidth="164.0" mnemonicParsing="false" prefHeight="164.0" prefWidth="263.0" styleClass="onboarding-work-button" StackPane.alignment="CENTER">
+                                             <StackPane.margin>
+                                                <Insets />
+                                             </StackPane.margin>
+                                          </Button>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="200.0" prefWidth="663.0" spacing="30.0">
+                                 <children>
+                                    <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="162.0" prefWidth="273.0">
+                                       <children>
+                                          <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="254.0" snapToPixel="false" StackPane.alignment="CENTER">
+                                             <StackPane.margin>
+                                                <Insets bottom="160.0" left="50.0" right="50.0" top="150.0" />
+                                             </StackPane.margin>
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="21.0" prefWidth="175.0" styleClass="text-button-bold-12" text="Mobile Developer">
+                                                   <VBox.margin>
+                                                      <Insets bottom="15.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label prefHeight="15.0" prefWidth="151.0" styleClass="text-button-10" text="Building applications for" />
+                                                <Label prefHeight="15.0" prefWidth="91.0" styleClass="text-button-10" text="mobile devices" />
+                                                <Label prefHeight="15.0" prefWidth="128.0" styleClass="text-button-10" text="Press for show more" textAlignment="CENTER">
+                                                   <padding>
+                                                      <Insets top="15.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <Button fx:id="show3" alignment="CENTER" minWidth="164.0" mnemonicParsing="false" prefHeight="164.0" prefWidth="263.0" styleClass="onboarding-work-button" StackPane.alignment="CENTER">
+                                             <StackPane.margin>
+                                                <Insets />
+                                             </StackPane.margin>
+                                          </Button>
+                                       </children>
+                                    </StackPane>
+                                    <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="162.0" prefWidth="273.0">
+                                       <children>
+                                          <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="254.0" snapToPixel="false" StackPane.alignment="CENTER">
+                                             <StackPane.margin>
+                                                <Insets bottom="160.0" left="50.0" right="50.0" top="150.0" />
+                                             </StackPane.margin>
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="21.0" prefWidth="121.0" styleClass="text-button-bold-12" text="ML Engineer">
+                                                   <VBox.margin>
+                                                      <Insets bottom="15.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                                                <Label prefHeight="15.0" prefWidth="204.0" styleClass="text-button-10" text="Developing and training machine" textAlignment="CENTER" />
+                                                <Label prefHeight="15.0" prefWidth="199.0" styleClass="text-button-10" text="learning models for data analysis" textAlignment="CENTER" />
+                                                <Label prefHeight="15.0" prefWidth="128.0" styleClass="text-button-10" text="Press for show more" textAlignment="CENTER">
+                                                   <padding>
+                                                      <Insets top="15.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <Button fx:id="show4" alignment="CENTER" minWidth="164.0" mnemonicParsing="false" prefHeight="164.0" prefWidth="263.0" styleClass="onboarding-work-button" StackPane.alignment="CENTER">
+                                             <StackPane.margin>
+                                                <Insets />
+                                             </StackPane.margin>
+                                          </Button>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="40.0" top="40.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

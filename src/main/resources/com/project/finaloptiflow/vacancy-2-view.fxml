@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="602.0" stylesheets="@../css/stylesheets.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.finaloptiflow.Vacancy2">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fillWidth="false" prefHeight="400.0" prefWidth="600.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="82.0" prefWidth="502.0">
+                     <children>
+                        <Label fx:id="vacancy_name" style="-fx-font-size: 30;" styleClass="text-montserrat-40" text="Frontend Developer" />
+                        <Label style="-fx-font-size: 16;" styleClass="text-montserrat-12" text="Designing web application interfaces" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label style="-fx-font-size: 16;" styleClass="text-montserrat-40" text="Required skills:" />
+                        <Label style="-fx-font-size: 16;" styleClass="text-montserrat-12" text="HTML, CSS, JavaScript, UI/UX, React, Next" />
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label style="-fx-font-size: 16;" styleClass="text-montserrat-40" text="Salary:" />
+                        <Label style="-fx-font-size: 16;" styleClass="text-montserrat-12" text="320,000.00 KZT" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="525.0" spacing="15.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="489.0" spacing="15.0">
+                           <children>
+                              <Button fx:id="Compare" alignment="CENTER" minWidth="164.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="128.0" styleClass="log-in-button" text="Compare" />
+                              <Label fx:id="getPercentLabel" styleClass="text-montserrat-10" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="87.0">
+                           <children>
+                              <Hyperlink fx:id="goBackButton" styleClass="text-montserrat-8-5" stylesheets="../css/stylesheets.css" text="Back" underline="true" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="40.0" top="40.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

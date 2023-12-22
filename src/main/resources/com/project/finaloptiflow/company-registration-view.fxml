@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" stylesheets="@../css/stylesheets.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.finaloptiflow.ForCompanyController">
+   <children>
+      <GridPane alignment="CENTER" layoutX="1.0" layoutY="10.0" prefHeight="700.0" prefWidth="1100.0" stylesheets="@../css/stylesheets.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="177.00001220703126" minHeight="105.00001983642579" prefHeight="132.20000915527345" />
+            <RowConstraints maxHeight="491.3999801635742" minHeight="378.3999877929687" prefHeight="464.1999908447265" />
+            <RowConstraints maxHeight="156.0000122070312" minHeight="103.1999633789062" prefHeight="108.79999999999995" />
+         </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="162.0" prefWidth="630.0" GridPane.columnIndex="1">
+               <padding>
+                  <Insets bottom="50.0" left="0.0" right="0.0" top="50.0" />
+               </padding>
+               <children>
+                  <VBox alignment="CENTER" prefHeight="103.0" prefWidth="498.0">
+                     <children>
+                        <HBox alignment="CENTER" spacing="20.0" styleClass="text-montserrat-40" stylesheets="@../css/stylesheets.css">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="349.0" style="-fx-font-size: 30;" styleClass="text-montserrat-40" stylesheets="@../css/stylesheets.css" text="Company Registration" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <GridPane.margin>
+                  <Insets top="30.0" />
+               </GridPane.margin>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="388.0" prefWidth="630.0" spacing="10.0" stylesheets="@../css/stylesheets.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <children>
+                  <VBox alignment="CENTER" spacing="5.0">
+                     <children>
+                        <TextField fx:id="companyNameTextField" minHeight="10.0" prefHeight="10.0" prefWidth="590.0" promptText="Company name" styleClass="textfield-area" stylesheets="@../css/stylesheets.css" />
+                        <TextField fx:id="contactNameTextField" minHeight="10.0" prefHeight="10.0" prefWidth="590.0" promptText="Contact name" styleClass="textfield-area" stylesheets="@../css/stylesheets.css" />
+                        <TextField fx:id="emailTextField" minHeight="10.0" prefHeight="10.0" prefWidth="590.0" promptText="Email" styleClass="textfield-area" stylesheets="@../css/stylesheets.css" />
+                        <TextField fx:id="phone" minHeight="35.0" prefHeight="35.0" prefWidth="590.0" promptText="Phone" styleClass="textfield-area" stylesheets="@../css/stylesheets.css" />
+                        <TextField fx:id="companyDescription" minHeight="35.0" prefHeight="35.0" prefWidth="590.0" promptText="Company description" styleClass="textfield-area" stylesheets="@../css/stylesheets.css" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="79.0" prefWidth="590.0">
+                     <children>
+                        <Label fx:id="dataIsNotCorrect" alignment="CENTER" prefHeight="62.0" prefWidth="590.0" style="-fx-text-fill: ff5e48;" styleClass="text-montserrat-10" textFill="#ff3333">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="130.0" prefWidth="630.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <padding>
+                  <Insets bottom="50.0" left="0.0" right="0.0" top="50.0" />
+               </padding>
+               <children>
+                  <VBox alignment="CENTER" prefHeight="71.0" prefWidth="318.0" spacing="5.0">
+                     <children>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="318.0" spacing="120.0">
+                           <children>
+                              <Button fx:id="sendRequest" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0" styleClass="log-in-button" text="Create" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="21.0" prefWidth="318.0">
+                           <children>
+                              <Hyperlink fx:id="homeButton" styleClass="text-montserrat-8-5" stylesheets="@../css/stylesheets.css" text="Back" underline="true" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

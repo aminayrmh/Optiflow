@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane minHeight="-Infinity" prefHeight="700.0" prefWidth="1100.0" stylesheets="@../css/stylesheets.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.finaloptiflow.AddResumeController">
+   <children>
+      <GridPane prefHeight="700.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="50.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="700.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/left_border.png" />
+               </image>
+            </ImageView>
+            <SplitPane dividerPositions="0.3027" prefHeight="700.0" prefWidth="1100.0" GridPane.columnIndex="1">
+               <items>
+                <AnchorPane maxHeight="-Infinity" maxWidth="385.0" minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="100.0">
+                     <children>
+                        <StackPane prefHeight="700.0" prefWidth="336.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="700.0" fitWidth="1100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/background.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="split-pane-divider">
+                                 <children>
+                                    <ImageView fitHeight="116.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/logo.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label style="-fx-font-size: 24;" styleClass="text-montserrat-40" text="OPTIFLOW">
+                                       <VBox.margin>
+                                          <Insets bottom="70.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Button fx:id="home" mnemonicParsing="false" prefHeight="43.0" prefWidth="335.0" styleClass="side-navigation-button" text="Home" />
+                                    <Line endX="163.7667236328125" startX="-100.0">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Line>
+                                    <Button fx:id="forCompanyButton" mnemonicParsing="false" prefHeight="43.0" prefWidth="335.0" styleClass="side-navigation-button" text="For Companies" />
+                                    <Button fx:id="addResume" mnemonicParsing="false" prefHeight="43.0" prefWidth="335.0" styleClass="side-navigation-button" text="Add Resume" />
+                                    <Line endX="163.7667236328125" startX="-100.0">
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </Line>
+                                    <Button fx:id="logOut" mnemonicParsing="false" prefHeight="43.0" prefWidth="335.0" styleClass="side-navigation-button" text="Log Out" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </StackPane>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.559270441532135" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="700.0" prefWidth="1100.0">
+                     <children>
+                        <VBox alignment="CENTER" fillWidth="false" prefHeight="698.4" prefWidth="728.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="166.0" prefWidth="574.0">
+                                 <children>
+                                    <Label alignment="CENTER" style="-fx-font-size: 30;" styleClass="text-montserrat-40" text="Add Resume" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="388.0" prefWidth="630.0" spacing="10.0" stylesheets="@../css/stylesheets.css">
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                 </padding>
+                                 <children>
+                                    <VBox alignment="CENTER" spacing="20.0">
+                                       <children>
+                                          <VBox prefHeight="21.0" prefWidth="590.0">
+                                             <children>
+                                                <Label style="-fx-font-size: 12;" styleClass="text-montserrat-12" text="Position" />
+                                                <TextField fx:id="position" minHeight="10.0" prefHeight="10.0" prefWidth="590.0" promptText="Position" styleClass="textfield-area" stylesheets="@../css/stylesheets.css" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="21.0" prefWidth="590.0">
+                                             <children>
+                                                <Label style="-fx-font-size: 12;" styleClass="text-montserrat-12" text="Skills" />
+                                                <TextField fx:id="skills" minHeight="10.0" prefHeight="10.0" prefWidth="590.0" promptText="Skills" styleClass="textfield-area" stylesheets="@../css/stylesheets.css" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="21.0" prefWidth="590.0">
+                                             <children>
+                                                <Label style="-fx-font-size: 12;" styleClass="text-montserrat-12" text="Work period (month count)" />
+                                                <TextField fx:id="workPeriod" minHeight="10.0" prefHeight="10.0" prefWidth="590.0" promptText="Work period" styleClass="textfield-area" stylesheets="@../css/stylesheets.css" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="14.0" prefWidth="590.0">
+                                             <children>
+                                                <Label style="-fx-font-size: 12;" styleClass="text-montserrat-12" text="Email" />
+                                                <TextField fx:id="email" minHeight="10.0" prefHeight="10.0" prefWidth="590.0" promptText="Email" styleClass="textfield-area" stylesheets="@../css/stylesheets.css" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <HBox alignment="CENTER" prefHeight="46.0" prefWidth="590.0">
+                                       <children>
+                                          <Label fx:id="signUpMessageField" alignment="CENTER" prefHeight="54.0" prefWidth="590.0" style="-fx-text-fill: ff5e48; -fx-font-size: 12;" styleClass="text-montserrat-12" textFill="#ff3333">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" prefHeight="130.0" prefWidth="630.0">
+                                 <padding>
+                                    <Insets bottom="30.0" top="30.0" />
+                                 </padding>
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="71.0" prefWidth="318.0" spacing="5.0">
+                                       <children>
+                                          <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="278.0" spacing="120.0">
+                                             <children>
+                                                <Button fx:id="addButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="46.0" prefWidth="123.0" styleClass="log-in-button" text="Add resume" />
+                                             </children>
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

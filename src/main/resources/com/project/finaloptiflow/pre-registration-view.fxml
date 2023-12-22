@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" stylesheets="@../css/stylesheets.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.finaloptiflow.PreRegistrationController">
+   <children>
+      <GridPane prefHeight="700.0" prefWidth="1100.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="362.20001220703125" minWidth="0.0" prefWidth="87.20000305175779" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="836.8" minWidth="10.0" prefWidth="749.5999969482422" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="247.4666320800781" minHeight="10.0" prefHeight="35.53333206176758" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="658.13330078125" minHeight="10.0" prefHeight="622.933349609375" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="158.13339843749998" minHeight="3.86669921875" prefHeight="39.066650390625" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox alignment="CENTER" prefHeight="564.0" prefWidth="804.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <HBox alignment="CENTER" spacing="20.0">
+                     <children>
+                        <ImageView fitHeight="53.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/logo.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="66.0" prefWidth="309.0" styleClass="text-montserrat-40" stylesheets="@../css/stylesheets.css" text="OPTIFLOW" textAlignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="100.0" />
+                     </padding>
+                  </HBox>
+                  <Label alignment="CENTER" style="-fx-font-size: 24;" styleClass="text-button-bold-12" text="Choose your goal" />
+                  <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="252.0" prefWidth="498.0" spacing="50.0">
+                     <children>
+                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="214.0" prefWidth="134.0">
+                           <children>
+                              <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="189.0" prefWidth="120.0" snapToPixel="false" StackPane.alignment="CENTER">
+                                 <children>
+                                    <ImageView disable="true" fitHeight="60.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/icons/work.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets bottom="13.0" left="30.0" right="30.0" top="13.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label alignment="CENTER" prefHeight="15.0" prefWidth="91.0" styleClass="text-button-bold-12" text="Find a Job">
+                                       <VBox.margin>
+                                          <Insets bottom="15.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label prefHeight="15.0" prefWidth="91.0" styleClass="text-button-10" text="I want to find a" />
+                                    <Label prefHeight="10.0" prefWidth="62.0" styleClass="text-button-10" text="job for me" />
+                                 </children>
+                                 <StackPane.margin>
+                                    <Insets bottom="160.0" left="50.0" right="50.0" top="150.0" />
+                                 </StackPane.margin>
+                                 <padding>
+                                    <Insets bottom="20.0" />
+                                 </padding>
+                              </VBox>
+                              <Button fx:id="findJobButton" alignment="CENTER" minWidth="164.0" mnemonicParsing="false" prefHeight="210.0" prefWidth="134.0" styleClass="onboarding-work-button">
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </StackPane>
+                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="213.0" prefWidth="134.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="182.0" prefWidth="101.0" snapToPixel="false" StackPane.alignment="CENTER">
+                                 <children>
+                                    <ImageView disable="true" fitHeight="60.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/icons/person.png" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" left="30.0" right="30.0" top="30.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label alignment="CENTER" prefHeight="15.0" prefWidth="91.0" styleClass="text-button-bold-12" text="Find an">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="15.0" prefWidth="91.0" styleClass="text-button-bold-12" text="Employee">
+                                       <VBox.margin>
+                                          <Insets bottom="15.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label prefHeight="15.0" prefWidth="80.0" styleClass="text-button-10" text="I want to find" />
+                                    <Label prefHeight="15.0" prefWidth="66.0" styleClass="text-button-10" text="employees" />
+                                 </children>
+                                 <StackPane.margin>
+                                    <Insets bottom="160.0" left="50.0" right="50.0" top="150.0" />
+                                 </StackPane.margin>
+                                 <padding>
+                                    <Insets bottom="20.0" />
+                                 </padding>
+                              </VBox>
+                              <Button fx:id="findEmployeeButton" alignment="CENTER" minWidth="164.0" mnemonicParsing="false" prefHeight="210.0" prefWidth="185.0" styleClass="onboarding-person-button">
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </Button>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
